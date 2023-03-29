@@ -7,7 +7,9 @@ const genreRouter = require('./genreRouter');
 
 
 const router = Router();
-
+router.get("/", async(req,res) => {
+    res.status(200).send("welcome back tere tetera")
+})
 // Configurar los routers
 // Ejemplo: router.use('/auth', authRouter);
 router.use('/videogames', gamesRouter);
